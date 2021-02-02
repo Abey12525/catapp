@@ -2,8 +2,8 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   labels:
-    app: catapp-abeyv001
-  name: catapp-abeyv001
+    app: catapp-abeyv002
+  name: catapp-abeyv002
 spec:
   port:
     targetPort: http
@@ -11,4 +11,4 @@ spec:
     termination: edge
   to:
     kind: Service
-    name: catapp-abeyv001
+    name: catapp-abeyv002
