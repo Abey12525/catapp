@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: catapp-abeyv001
-  name: catapp-abeyv001
+    app: catapp-abeyv002
+  name: catapp-abeyv002
 spec:
   ports:
     - name: http
@@ -11,4 +11,4 @@ spec:
       targetPort: 3000
       protocol: TCP
   selector:
-    app: catapp-abeyv001
+    app: catapp-abeyv002
