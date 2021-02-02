@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: catapp-abeyv001
+  name: catapp-abeyv002
   labels:
-    app: catapp-abeyv001
+    app: catapp-abeyv002
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: catapp-abeyv001
+      app: catapp-abeyv002
   template:
     metadata:
       labels:
-        app: catapp-abeyv001
+        app: catapp-abeyv002
     spec:
       containers:
-        - name: catapp-abeyv001
+        - name: catapp-abeyv002
           # This image will be overwritten by the update-deployment Task
           image: catapp:latest
           imagePullPolicy: Always
